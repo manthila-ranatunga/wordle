@@ -130,8 +130,39 @@ hr {
 
 /* Phone screens */
 @media only screen and (max-width: 600px) {
+
+ hr {
+  display: none;
+ }
+
+  #board {
+    width: 325px;
+    height: 380px;
+    /* width: 700px; */
+    margin: 0 auto;
+    margin-top: 3px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tile {
+    /* Box */
+    border: 2px solid lightgray;
+    width: 56px;
+    height: 56px;
+    margin: 2.5px;
+
+    /* Letters */
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Horizontally */
+    align-items: center; /* Vertically */
+  }
+
   .keyboard-row {
-    width: 400px;
+    width: 360px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -140,8 +171,8 @@ hr {
   .key-tile {
     /* Box */
     border: 1px solid lightgray;
-    width: 36px;
-    height: 60px;
+    width: 32px;
+    height: 50px;
     margin: 1px;
 
     /* Letters */
@@ -157,8 +188,8 @@ hr {
   .enter-key-tile {
     /* Box */
     border: 1px solid lightgray;
-    width: 79px;
-    height: 60px;
+    width: 71px;
+    height: 50px;
     margin: 1px;
 
     /* Letters */
