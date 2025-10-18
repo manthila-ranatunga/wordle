@@ -50,6 +50,7 @@ hr {
   margin-top: 3px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tile {
@@ -144,6 +145,7 @@ hr {
     margin-top: 3px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .tile {
