@@ -3555,7 +3555,7 @@ console.log(word);
 
 window.onload = function () {
   initialise();
-}
+};
 
 // function newGame() {
 //     initialise();
@@ -3708,7 +3708,7 @@ function update() {
     if (correct == width) {
       let tries = row + 1;
       document.getElementById("answer").innerText =
-        "Solved in " + tries + " tries.";
+        "Solved in " + tries + " attempts!";
       gameOver = True;
     }
   }
@@ -3733,8 +3733,14 @@ function update() {
       // is the letter not in the word?
       else {
         currTile.classList.add("absent");
+
         let keyTile = document.getElementById("Key" + letter);
-        keyTile.classList.add("absent");
+        if (
+          !keyTile.classList.contains("correct") &&
+          !keyTile.classList.contains("present")
+        ) {
+          keyTile.classList.add("absent");
+        }
       }
     }
   }
